@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Apply to Creata Ventures - Submit your startup for consideration as a portfolio company">
+  <title>Apply | Creata Ventures</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%231a365d' width='100' height='100' rx='20'/><text x='50' y='65' font-size='50' fill='white' text-anchor='middle' font-family='Arial'>CV</text></svg>">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">CV</span>
+        <span>Creata Ventures</span>
+      </a>
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="team.html" class="nav-link">Team</a></li>
+          <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li><a href="apply.html" class="nav-link active">Apply</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="lang-switch">
+          <button class="lang-btn active" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="ru">RU</button>
+        </div>
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Apply as Founder</h1>
+      <p>Tell us about your venture and let's explore building together</p>
+    </div>
+  </section>
+
+  <!-- Application Form -->
+  <section class="section">
+    <div class="container container-narrow">
+
+      <!-- What We Look For -->
+      <div class="card" style="margin-bottom: var(--space-12); background: linear-gradient(135deg, var(--color-light) 0%, var(--color-white) 100%);">
+        <h3>What We Look For</h3>
+        <div class="grid grid-2" style="margin-top: var(--space-6); gap: var(--space-6);">
+          <div>
+            <h4 style="font-size: var(--text-base); margin-bottom: var(--space-2);">✓ Sector Fit</h4>
+            <p style="font-size: var(--text-sm); color: var(--color-gray-600);">Creative Industries (GameDev, Digital Content, Design) or DeepTech (HealthTech, NeuroTech, BioTech, AgriTech, GreenTech)</p>
+          </div>
+          <div>
+            <h4 style="font-size: var(--text-base); margin-bottom: var(--space-2);">✓ Stage</h4>
+            <p style="font-size: var(--text-sm); color: var(--color-gray-600);">Pre-seed to Seed. MVP or working prototype preferred, but strong ideas with committed founders also considered.</p>
+          </div>
+          <div>
+            <h4 style="font-size: var(--text-base); margin-bottom: var(--space-2);">✓ Team</h4>
+            <p style="font-size: var(--text-sm); color: var(--color-gray-600);">1-3 committed founders willing to work full-time on the venture.</p>
+          </div>
+          <div>
+            <h4 style="font-size: var(--text-base); margin-bottom: var(--space-2);">✓ Ambition</h4>
+            <p style="font-size: var(--text-sm); color: var(--color-gray-600);">10x exit potential in 5-7 years. Regional or global market opportunity.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <form name="founder-application" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="founder-application">
+
+        <!-- Honeypot -->
+        <p class="hidden">
+          <label>Don't fill this out: <input name="bot-field"></label>
+        </p>
+
+        <!-- Personal Information -->
+        <h3 style="margin-bottom: var(--space-6);">About You</h3>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label" for="name">Full Name <span class="required">*</span></label>
+            <input type="text" id="name" name="name" class="form-input" required placeholder="John Smith">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email <span class="required">*</span></label>
+            <input type="email" id="email" name="email" class="form-input" required placeholder="john@example.com">
+          </div>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label" for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" class="form-input" placeholder="+7 XXX XXX XX XX">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="linkedin">LinkedIn URL</label>
+            <input type="url" id="linkedin" name="linkedin" class="form-input" placeholder="https://linkedin.com/in/...">
+          </div>
+        </div>
+
+        <!-- Startup Information -->
+        <h3 style="margin-top: var(--space-10); margin-bottom: var(--space-6);">Your Startup</h3>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label" for="startup-name">Startup Name <span class="required">*</span></label>
+            <input type="text" id="startup-name" name="startup-name" class="form-input" required placeholder="Acme Inc.">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="website">Website URL</label>
+            <input type="url" id="website" name="website" class="form-input" placeholder="https://acme.com">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="one-liner">One-line Description <span class="required">*</span></label>
+          <input type="text" id="one-liner" name="one-liner" class="form-input" required placeholder="We help X do Y using Z">
+        </div>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label" for="sector">Sector <span class="required">*</span></label>
+            <select id="sector" name="sector" class="form-select" required>
+              <option value="">Select sector...</option>
+              <optgroup label="Creative Industries">
+                <option value="gamedev">GameDev</option>
+                <option value="digital-content">Digital Content</option>
+                <option value="design-ux">Design & UX</option>
+                <option value="other-creative">Other Creative</option>
+              </optgroup>
+              <optgroup label="DeepTech">
+                <option value="healthtech">HealthTech / MentalTech</option>
+                <option value="neurotech">NeuroTech</option>
+                <option value="biotech">BioTech</option>
+                <option value="agritech">AgriTech</option>
+                <option value="greentech">GreenTech</option>
+                <option value="other-deeptech">Other DeepTech</option>
+              </optgroup>
+              <optgroup label="Platform">
+                <option value="platform">Platform / Marketplace</option>
+                <option value="saas">B2B SaaS</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="stage">Stage <span class="required">*</span></label>
+            <select id="stage" name="stage" class="form-select" required>
+              <option value="">Select stage...</option>
+              <option value="idea">Idea</option>
+              <option value="prototype">Prototype</option>
+              <option value="mvp">MVP</option>
+              <option value="pmf">Product-Market Fit</option>
+              <option value="growth">Growth</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label" for="team-size">Team Size</label>
+            <select id="team-size" name="team-size" class="form-select">
+              <option value="">Select...</option>
+              <option value="1">Solo founder</option>
+              <option value="2">2 co-founders</option>
+              <option value="3">3 co-founders</option>
+              <option value="4+">4+ team members</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="fulltime">Are you working full-time on this? <span class="required">*</span></label>
+            <select id="fulltime" name="fulltime" class="form-select" required>
+              <option value="">Select...</option>
+              <option value="yes">Yes, full-time</option>
+              <option value="soon">Will be soon</option>
+              <option value="no">No, part-time</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- The Opportunity -->
+        <h3 style="margin-top: var(--space-10); margin-bottom: var(--space-6);">The Opportunity</h3>
+
+        <div class="form-group">
+          <label class="form-label" for="problem">What problem are you solving? <span class="required">*</span></label>
+          <textarea id="problem" name="problem" class="form-textarea" required placeholder="Describe the problem and who experiences it..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="solution">What's your solution and unfair advantage?</label>
+          <textarea id="solution" name="solution" class="form-textarea" placeholder="What makes your approach unique? Why can your team win?"></textarea>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label" for="raising">How much are you raising?</label>
+            <input type="text" id="raising" name="raising" class="form-input" placeholder="e.g., $100K">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="deck">Pitch Deck URL</label>
+            <input type="url" id="deck" name="deck" class="form-input" placeholder="https://docs.google.com/...">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="anything-else">Anything else we should know?</label>
+          <textarea id="anything-else" name="anything-else" class="form-textarea" placeholder="Previous exits, relevant experience, current traction..."></textarea>
+        </div>
+
+        <!-- Consent -->
+        <div class="form-group" style="margin-top: var(--space-8);">
+          <label class="form-checkbox">
+            <input type="checkbox" name="consent" required>
+            <span>I agree to share this information with Creata Ventures for evaluation purposes. <span class="required">*</span></span>
+          </label>
+        </div>
+
+        <!-- Submit -->
+        <div style="margin-top: var(--space-8);">
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Application</button>
+        </div>
+
+        <p style="text-align: center; margin-top: var(--space-6); font-size: var(--text-sm); color: var(--color-gray-500);">
+          We review all applications and respond within 2 weeks.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="color: var(--color-white);">
+            <span class="logo-icon">CV</span>
+            <span>Creata Ventures</span>
+          </a>
+          <p>AIFC-registered Venture Studio building the future of Creative Industries & DeepTech in Central Asia.</p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>For Founders</h4>
+          <ul class="footer-links">
+            <li><a href="apply.html">Apply</a></li>
+            <li><a href="about.html#process">Our Process</a></li>
+            <li><a href="about.html#thesis">Investment Thesis</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:david@creata.team">david@creata.team</a></li>
+            <li><a href="tel:+77765329977">+7 776 532 99 77</a></li>
+            <li>AIFC, Astana, Kazakhstan</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Creata Ventures Studio Ltd. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+          <a href="https://t.me" target="_blank" rel="noopener" aria-label="Telegram">tg</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

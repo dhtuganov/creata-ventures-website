@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Подать заявку в Creata Ventures - Отправьте информацию о вашем стартапе для рассмотрения">
+  <title>Подать заявку | Creata Ventures</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%231a365d' width='100' height='100' rx='20'/><text x='50' y='65' font-size='50' fill='white' text-anchor='middle' font-family='Arial'>CV</text></svg>">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">CV</span>
+        <span>Creata Ventures</span>
+      </a>
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Главная</a></li>
+          <li><a href="about.html" class="nav-link">О нас</a></li>
+          <li><a href="team.html" class="nav-link">Команда</a></li>
+          <li><a href="portfolio.html" class="nav-link">Портфолио</a></li>
+          <li><a href="apply.html" class="nav-link active">Подать заявку</a></li>
+          <li><a href="contact.html" class="nav-link">Контакты</a></li>
+        </ul>
+        <div class="lang-switch">
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn active" data-lang="ru">RU</button>
+        </div>
+        <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Подать заявку</h1>
+      <p>Расскажите о вашем проекте — давайте построим вместе</p>
+    </div>
+  </section>
+
+  <!-- Application Form -->
+  <section class="section">
+    <div class="container container-narrow">
+
+      <!-- What We Look For -->
+      <div class="card" style="margin-bottom: var(--space-12); background: linear-gradient(135deg, var(--color-light) 0%, var(--color-white) 100%);">
+        <h3>Что мы ищем</h3>
+        <div class="grid grid-2" style="margin-top: var(--space-6); gap: var(--space-6);">
+          <div>
+            <h4 style="font-size: var(--text-base); margin-bottom: var(--space-2);">✓ Отраслевой фокус</h4>
+            <p style="font-size: var(--text-sm); color: var(--color-gray-600);">Креативные индустрии (GameDev, цифровой контент, дизайн) или DeepTech (HealthTech, NeuroTech, BioTech, AgriTech, GreenTech)</p>
+          </div>
+          <div>
+            <h4 style="font-size: var(--text-base); margin-bottom: var(--space-2);">✓ Стадия</h4>
+            <p style="font-size: var(--text-sm); color: var(--color-gray-600);">Pre-seed до Seed. Предпочтительно MVP или рабочий прототип, но рассматриваем и сильные идеи с целеустремлёнными основателями.</p>
+          </div>
+          <div>
+            <h4 style="font-size: var(--text-base); margin-bottom: var(--space-2);">✓ Команда</h4>
+            <p style="font-size: var(--text-sm); color: var(--color-gray-600);">1-3 целеустремлённых основателя, готовых работать full-time над проектом.</p>
+          </div>
+          <div>
+            <h4 style="font-size: var(--text-base); margin-bottom: var(--space-2);">✓ Амбиции</h4>
+            <p style="font-size: var(--text-sm); color: var(--color-gray-600);">Потенциал 10x exit за 5-7 лет. Региональная или глобальная рыночная возможность.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <form name="founder-application-ru" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="founder-application-ru">
+
+        <!-- Honeypot -->
+        <p class="hidden">
+          <label>Не заполняйте это поле: <input name="bot-field"></label>
+        </p>
+
+        <!-- Personal Information -->
+        <h3 style="margin-bottom: var(--space-6);">О вас</h3>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label" for="name">ФИО <span class="required">*</span></label>
+            <input type="text" id="name" name="name" class="form-input" required placeholder="Иван Иванов">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email <span class="required">*</span></label>
+            <input type="email" id="email" name="email" class="form-input" required placeholder="ivan@example.com">
+          </div>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label" for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" class="form-input" placeholder="+7 XXX XXX XX XX">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="linkedin">LinkedIn URL</label>
+            <input type="url" id="linkedin" name="linkedin" class="form-input" placeholder="https://linkedin.com/in/...">
+          </div>
+        </div>
+
+        <!-- Startup Information -->
+        <h3 style="margin-top: var(--space-10); margin-bottom: var(--space-6);">Ваш стартап</h3>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label" for="startup-name">Название стартапа <span class="required">*</span></label>
+            <input type="text" id="startup-name" name="startup-name" class="form-input" required placeholder="Acme Inc.">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="website">URL веб-сайта</label>
+            <input type="url" id="website" name="website" class="form-input" placeholder="https://acme.com">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="one-liner">Описание в одну строку <span class="required">*</span></label>
+          <input type="text" id="one-liner" name="one-liner" class="form-input" required placeholder="Мы помогаем X делать Y с помощью Z">
+        </div>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label" for="sector">Сектор <span class="required">*</span></label>
+            <select id="sector" name="sector" class="form-select" required>
+              <option value="">Выберите сектор...</option>
+              <optgroup label="Креативные индустрии">
+                <option value="gamedev">GameDev</option>
+                <option value="digital-content">Цифровой контент</option>
+                <option value="design-ux">Дизайн и UX</option>
+                <option value="other-creative">Другое креативное</option>
+              </optgroup>
+              <optgroup label="DeepTech">
+                <option value="healthtech">HealthTech / MentalTech</option>
+                <option value="neurotech">NeuroTech</option>
+                <option value="biotech">BioTech</option>
+                <option value="agritech">AgriTech</option>
+                <option value="greentech">GreenTech</option>
+                <option value="other-deeptech">Другое DeepTech</option>
+              </optgroup>
+              <optgroup label="Платформа">
+                <option value="platform">Платформа / Маркетплейс</option>
+                <option value="saas">B2B SaaS</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="stage">Стадия <span class="required">*</span></label>
+            <select id="stage" name="stage" class="form-select" required>
+              <option value="">Выберите стадию...</option>
+              <option value="idea">Идея</option>
+              <option value="prototype">Прототип</option>
+              <option value="mvp">MVP</option>
+              <option value="pmf">Product-Market Fit</option>
+              <option value="growth">Рост</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label" for="team-size">Размер команды</label>
+            <select id="team-size" name="team-size" class="form-select">
+              <option value="">Выберите...</option>
+              <option value="1">Соло-фаундер</option>
+              <option value="2">2 сооснователя</option>
+              <option value="3">3 сооснователя</option>
+              <option value="4+">4+ членов команды</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="fulltime">Вы работаете full-time? <span class="required">*</span></label>
+            <select id="fulltime" name="fulltime" class="form-select" required>
+              <option value="">Выберите...</option>
+              <option value="yes">Да, full-time</option>
+              <option value="soon">Скоро будет</option>
+              <option value="no">Нет, part-time</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- The Opportunity -->
+        <h3 style="margin-top: var(--space-10); margin-bottom: var(--space-6);">Возможность</h3>
+
+        <div class="form-group">
+          <label class="form-label" for="problem">Какую проблему вы решаете? <span class="required">*</span></label>
+          <textarea id="problem" name="problem" class="form-textarea" required placeholder="Опишите проблему и кто её испытывает..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="solution">Какое ваше решение и конкурентное преимущество?</label>
+          <textarea id="solution" name="solution" class="form-textarea" placeholder="Что делает ваш подход уникальным? Почему ваша команда победит?"></textarea>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label" for="raising">Сколько вы привлекаете?</label>
+            <input type="text" id="raising" name="raising" class="form-input" placeholder="например, $100K">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="deck">URL презентации</label>
+            <input type="url" id="deck" name="deck" class="form-input" placeholder="https://docs.google.com/...">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="anything-else">Что ещё нам следует знать?</label>
+          <textarea id="anything-else" name="anything-else" class="form-textarea" placeholder="Предыдущие экзиты, релевантный опыт, текущий трекшн..."></textarea>
+        </div>
+
+        <!-- Consent -->
+        <div class="form-group" style="margin-top: var(--space-8);">
+          <label class="form-checkbox">
+            <input type="checkbox" name="consent" required>
+            <span>Я согласен передать эту информацию Creata Ventures для оценки. <span class="required">*</span></span>
+          </label>
+        </div>
+
+        <!-- Submit -->
+        <div style="margin-top: var(--space-8);">
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Отправить заявку</button>
+        </div>
+
+        <p style="text-align: center; margin-top: var(--space-6); font-size: var(--text-sm); color: var(--color-gray-500);">
+          Мы рассматриваем все заявки и отвечаем в течение 2 недель.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="color: var(--color-white);">
+            <span class="logo-icon">CV</span>
+            <span>Creata Ventures</span>
+          </a>
+          <p>Венчурная студия, зарегистрированная в МФЦА. Строим будущее Креативных индустрий и DeepTech в Центральной Азии.</p>
+        </div>
+        <div>
+          <h4>Навигация</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="team.html">Команда</a></li>
+            <li><a href="portfolio.html">Портфолио</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Для основателей</h4>
+          <ul class="footer-links">
+            <li><a href="apply.html">Подать заявку</a></li>
+            <li><a href="about.html#process">Наш процесс</a></li>
+            <li><a href="about.html#thesis">Инвестиционный тезис</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Контакты</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:david@creata.team">david@creata.team</a></li>
+            <li><a href="tel:+77765329977">+7 776 532 99 77</a></li>
+            <li>МФЦА, Астана, Казахстан</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Creata Ventures Studio Ltd. Все права защищены.</p>
+        <div class="footer-social">
+          <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+          <a href="https://t.me" target="_blank" rel="noopener" aria-label="Telegram">tg</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
