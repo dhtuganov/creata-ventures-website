@@ -4,7 +4,7 @@ Official website for **Creata Ventures** - an AIFC-registered Venture Studio foc
 
 ## Live Site
 
-- **Production:** [creataventures.com](https://creataventures.com) (after deployment)
+- **Production:** [www.creata.ventures](https://www.creata.ventures)
 - **Netlify Preview:** Available after connecting to GitHub
 
 ## Features
@@ -106,7 +106,7 @@ netlify deploy --prod
 ## Custom Domain Setup
 
 1. In Netlify dashboard, go to **Domain settings**
-2. Add custom domain: `creataventures.com`
+2. Add custom domain: `creata.ventures`
 3. Configure DNS at your registrar:
    - CNAME: `www` → `[your-site].netlify.app`
    - A record: `@` → Netlify IP addresses
